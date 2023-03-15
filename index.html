@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta charset="utf-8">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300;400;700&family=Mukta:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:ital,wght@0,400;1,200&family=Red+Hat+Display:wght@300;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/Style.css">
-	<title>Encriptador</title>		
-</head>
-<body>
-	<header class="head container">
-		<img src="imagenes/Logo.png" alt="Logo" class="Logo">
-	</header>
-	<main>
-		<section>
-			<textarea class="text-area" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
-			<div>
-				<h6 class="informacion"> Ingrese solo letras y números</h6>
-</div>
-
-			<div class="botones">
-				<button class="btn-encriptar" onclick="btnValidar()">
-				Encriptar </button>
-			<button class="btn-desencriptar" onclick="btndesencriptar()">Desencriptar </button>
-				
-			</div>
-		</section>
-
-
-		<section class="">
-			<textarea class="mensaje" cols="30" rows="10"></textarea>
-			<div class="copy">
-				<button class="btn-copiar" onclick="copiar()">Copiar </button>
-		</div>
-		</section>
-	
-
-	</main>
-	
-	<footer>
-		
-        <h3 class="rodapie__titulo"> Astrid Lorena Castañeda Vargas</h2>
-        <p class="rodapie__descripcion">Alura</p>
-       
-    </footer>
-<script src="js/Index.js"></script>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="icon" type="image/png" href="./assets/rocket.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainCard">
+        <div class="title"><img src="./assets/rocket.svg" /></div>
+        <div>
+          <form action="">
+            <input
+              type="text"
+              name="task"
+              placeholder="Nombre de la tarea"
+              class="inputForm"
+              autocomplete="off"
+              data-form-input
+            />
+            <button type="submit" class="btnCreate" data-form-btn>
+              Agregar <i class="fas fa-plus-circle"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="cardsList" data-list>
+        </ul>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
