@@ -1,5 +1,5 @@
-import checkComplete from 'checkComplete.js';
-import deleteIcon from 'deleteIcon.js';
+import checkComplete from './Components/checkComplete.js';
+import deleteIcon from './Components/deleteIcon.js';
 
 const btn = document.querySelector('[data-form-btn]');
 
